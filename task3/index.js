@@ -7,7 +7,7 @@ $(document).ready(function () {
     // Знаходимо всі теги <h3>
     $('h3').each(function () {
         // Знаходимо наступний елемент <div>
-        var nextDiv = $(this).next('div');
+        const nextDiv = $(this).next('div');
 
         // Перевіряємо, чи існує наступний елемент <div>
         if (nextDiv.length > 0) {
