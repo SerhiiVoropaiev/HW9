@@ -4,14 +4,9 @@
 безпосередньо над відповідним елементом `<h3>`.
  */
 $(document).ready(function () {
-    // Знаходимо всі теги <h3>
     $('h3').each(function () {
-        // Знаходимо наступний елемент <div>
         const nextDiv = $(this).next('div');
-
-        // Перевіряємо, чи існує наступний елемент <div>
         if (nextDiv.length > 0) {
-            // Переміщуємо наступний елемент <div> перед поточним <h3>
             nextDiv.insertBefore($(this));
         }
     });
